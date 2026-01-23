@@ -1,3 +1,17 @@
 CREATE DATABASE IF NOT EXISTS college;
+
 DROP DATABASE IF EXISTS temp;
+
 USE college;
+
+CREATE TABLE student (
+	id INT PRIMARY KEY,
+	name VARCHAR(50),
+	age INT NOT NULL
+);
+
+INSERT INTO student VALUES(1, "AMAN", 26);
+INSERT INTO student VALUES(2, "Shradha", 24);
+INSERT INTO student VALUES(3, "Rohit", 25);
+
+SELECT * FROM student;

@@ -27,3 +27,7 @@ eg. mongoDB
     col_name2 datatype contraint,
     col_name3 datatype contraint,
 );
+
+# SQL Datatypes
+- They define the type of values that can be stored in a column
+- eg. char, varchar, blob, int, tinyint, bigint, float, double, boolean, date, year, etc.
