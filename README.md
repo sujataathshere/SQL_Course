@@ -38,3 +38,9 @@ eg. mongoDB
 3. DML(Data Manipulation Language) : Insert, Update & Delete
 4. DCL(Data Control Language) : Grant & Revoke permission to users
 5. TCL(Transaction Control Language) : Start transaction, Commit, Rollback
+
+# Database related Queries
+- CREATE DATABASE db_name;
+- DROP DATABASE db_name;
+- SHOW DATABASES;
+- SHOW TABLES;
