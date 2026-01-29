@@ -31,3 +31,10 @@ eg. mongoDB
 # SQL Datatypes
 - They define the type of values that can be stored in a column
 - eg. char, varchar, blob, int, tinyint, bigint, float, double, boolean, date, year, etc.
+
+# Types of SQL Commands
+1. DDL(Data Definition Language) : Create, Alter, Remain, Truncate & Drop
+2. DQL(Data Query Language) : Select
+3. DML(Data Manipulation Language) : Insert, Update & Delete
+4. DCL(Data Control Language) : Grant & Revoke permission to users
+5. TCL(Transaction Control Language) : Start transaction, Commit, Rollback
