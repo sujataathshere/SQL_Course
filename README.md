@@ -65,3 +65,6 @@ eg. mongoDB
 - It is a column or set of columns in a table that uniquely identifies each row.
 - There is only 1 PK & it should be NOT null.
 2. Foreign key
+- It is a column or set of columns in a table that refers to the primary key
+- There can be multiple FKs.
+- FKs can have duplicate & null values.
