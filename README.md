@@ -59,3 +59,9 @@ eg. mongoDB
 - INSERT INTO table_name VALUES(colname1_v1, colname2_v2, colname3_v3);
 - INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, col3_v1)
 (col1_v2, col2_v2, col3_v2);
+
+# Keys
+1. Primary key
+- It is a column or set of columns in a table that uniquely identifies each row.
+- There is only 1 PK & it should be NOT null.
+2. Foreign key
