@@ -68,3 +68,23 @@ eg. mongoDB
 - It is a column or set of columns in a table that refers to the primary key
 - There can be multiple FKs.
 - FKs can have duplicate & null values.
+
+# Constraints
+- SQL constraints are used to specify rules for data in a table.
+1. NOT NULL
+- columns can not have a null value
+- eg. col1 int NOT NULL
+2. UNIQUE
+- All values in column are different
+- eg. col2 int UNIQUE
+3. PRIMARY KEY
+- It makes a column unique & not null but used only for one
+- eg. id int PRIMARY KEY
+4. FOREIGN KEY
+- It prevent actions that would destroy links between tables
+5. DEFAULT
+- It sets the default value of a column
+- eg. salary INT DEFAULT 25000
+6. CHECK
+- It can limit the values allowed in a column
+- eg. age INT CHECK (age >= 18)
