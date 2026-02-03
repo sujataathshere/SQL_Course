@@ -10,7 +10,7 @@
 - Data stored in tables
 eg. MySQL, Oracle, PostgreSQL, Microsoft SQL Server
 2. Non-relational(NoSQL)
--Data not stored in tables
+- Data not stored in tables
 eg. mongoDB
 
 # What is SQL?
@@ -46,16 +46,16 @@ eg. mongoDB
 - SHOW TABLES;
 
 # Table related Queries
-1. Create
+1. To Create
 - CREATE TABLE table_name(
     col_name1 datatype contraint,
     col_name2 datatype contraint,
 );
-2. To delete
+2. To Delete
 - DROP TABLE table_name;
-3. To show
+3. To Show
 - SELECT * FROM table_name;
-4. To add
+4. To Add
 - INSERT INTO table_name VALUES(colname1_v1, colname2_v2, colname3_v3);
 - INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, col3_v1)
 (col1_v2, col2_v2, col3_v2);
@@ -88,3 +88,14 @@ eg. mongoDB
 6. CHECK
 - It can limit the values allowed in a column
 - eg. age INT CHECK (age >= 18)
+
+# Select in Detail
+- used to select any data from the database.
+- eg. SELECT column_name FROM table_name;
+
+# Distinct
+- Used to return only distinct (different) values.
+- eg. SELECT DISTINCT City FROM Student;
+
+# Where
+- 
