@@ -102,7 +102,7 @@ eg. mongoDB
 - eg. SELECT * FROM student WHERE marks > 80;
 
 # Operators in WHERE
-1. Arithmetic Operators : 
+1. Arithmetic Operators : +, -, *, /, %
 2. Comparison Operators
 3. Logical Operators
 4. Bitwise Operators
