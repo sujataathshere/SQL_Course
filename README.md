@@ -93,9 +93,16 @@ eg. mongoDB
 - used to select any data from the database.
 - eg. SELECT column_name FROM table_name;
 
-# Distinct
+# Distinct statement
 - Used to return only distinct (different) values.
 - eg. SELECT DISTINCT City FROM Student;
 
-# Where
-- 
+# Where Clause
+- To define some conditions
+- eg. SELECT * FROM student WHERE marks > 80;
+
+# Operators in WHERE
+1. Arithmetic Operators : 
+2. Comparison Operators
+3. Logical Operators
+4. Bitwise Operators
