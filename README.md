@@ -102,13 +102,19 @@ eg. mongoDB
 - eg. SELECT * FROM student WHERE marks > 80;
 
 # Operators in WHERE
-1. Arithmetic Operators : +, -, *, /, %
+1. Arithmetic Operators : +(add), -(sub), *(mul), /(div), %(mod)
+
+2. Comparison Operators : = (equal to), != (not equal to), >, >=, <, <=
+
+3. Logical Operators : AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
 - AND : To check for both conditions to be true
 - OR : TO check for one of the conditions to be true
 - BETWEEN : Selects for a given range
 - IN : Matches any value in the list
 - NOT : To negate the given condition
-- 
-2. Comparison Operators
-3. Logical Operators : AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
-4. Bitwise Operators
+ 
+4. Bitwise Operators : &(Bitwise AND), |(Bitwise OR)
+
+# Limit Clause
+- Sets an upper limit on number of (tuples) rows to be retuned
+- eg. SELECT col1, col2 FROM table_name LIMIT number; 
