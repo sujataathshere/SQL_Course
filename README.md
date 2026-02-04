@@ -57,7 +57,7 @@ eg. mongoDB
 - SELECT * FROM table_name;
 4. To Add
 - INSERT INTO table_name VALUES(colname1_v1, colname2_v2, colname3_v3);
-- INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, col3_v1)
+- INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, col3_v1),
 (col1_v2, col2_v2, col3_v2);
 
 # Keys
@@ -103,6 +103,12 @@ eg. mongoDB
 
 # Operators in WHERE
 1. Arithmetic Operators : +, -, *, /, %
+- AND : To check for both conditions to be true
+- OR : TO check for one of the conditions to be true
+- BETWEEN : Selects for a given range
+- IN : Matches any value in the list
+- NOT : To negate the given condition
+- 
 2. Comparison Operators
-3. Logical Operators
+3. Logical Operators : AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
 4. Bitwise Operators
