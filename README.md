@@ -118,3 +118,7 @@ eg. mongoDB
 # Limit Clause
 - Sets an upper limit on number of (tuples) rows to be retuned
 - eg. SELECT col1, col2 FROM table_name LIMIT number; 
+
+# Order By Clause
+- To sort in ascending(ASC) or descending order(DESC)
+- eg. SELECT col1, col2 FROM table_name ORDER BY col_names ASC;
