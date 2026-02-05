@@ -122,3 +122,11 @@ eg. mongoDB
 # Order By Clause
 - To sort in ascending(ASC) or descending order(DESC)
 - eg. SELECT col1, col2 FROM table_name ORDER BY col_names ASC;
+
+# Aggregate Functions
+- It perform a calculation on a set values, and return a single value.
+1. COUNT()
+2. MAX()
+3. MIN()
+4. SUM()
+5. AVG()
