@@ -130,3 +130,10 @@ eg. mongoDB
 3. MIN()
 4. SUM()
 5. AVG()
+- eg. SELECT fun_name(col_name) FROM table_name;
+
+# Group By Clause
+- Groups rows that have tghe same values into summary rows.
+- It collects data from multiple records & groups the result by one or more column.
+- Genarally we use group by with some aggregation function.
+- eg. SELECT col1_name, fun_name(col2_name) FROM table_name GROUP BY col1_name;
