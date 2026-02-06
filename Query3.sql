@@ -49,4 +49,4 @@ ORDER BY grade;
 SELECT city, COUNT(name)
 FROM student
 GROUP BY city
-HACING MAX(marks)>90;
+HAVING MAX(marks)>90;
