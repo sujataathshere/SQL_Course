@@ -54,11 +54,3 @@ WHERE city IN ("Delhi", "Mumbai");
 SELECT * 
 FROM student 
 WHERE city NOT IN ("Delhi", "Mumbai");
-
-/* Limit Clause*/
-SELECT * FROM student LIMIT 3;
-
-/* Order By Clause*/
-SELECT * 
-FROM student
-ORDER BY city ASC;

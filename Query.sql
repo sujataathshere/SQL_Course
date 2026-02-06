@@ -36,7 +36,7 @@ CREATE TABLE address (
 	cust_id INT,
 	city VARCHAR(20),
 	state VARCHAR(50),
-	country VARCHAR(50)
+	country VARCHAR(50),
 	FOREIGN KEY (cust_id) references customer (id)
 );
 

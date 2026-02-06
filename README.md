@@ -137,3 +137,8 @@ eg. mongoDB
 - It collects data from multiple records & groups the result by one or more column.
 - Genarally we use group by with some aggregation function.
 - eg. SELECT col1_name, fun_name(col2_name) FROM table_name GROUP BY col1_name;
+
+# Having Clause
+- Similar to Where i.e applies some condition on rows.
+- Used when we want to apply any condition after grouping.
+- eg. SELECT col1_name, AG_FUN(col2_name) FROM table_name GROUP BY col1_name HAVING AG_FUN(col3_name)>90;
