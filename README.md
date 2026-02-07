@@ -150,3 +150,8 @@ WHERE condition
 GROUP BY column(s)
 HAVING condition
 ORDER BY column(s) ASC/DESC;
+
+# Table related Queries
+1. UPDATE 
+- To update existing rows
+- eg. UPDATE table_name SET col1 = val1, col2 = val2 WHERE condition;
