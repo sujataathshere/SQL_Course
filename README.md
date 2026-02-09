@@ -155,3 +155,6 @@ ORDER BY column(s) ASC/DESC;
 1. UPDATE 
 - To update existing rows
 - eg. UPDATE table_name SET col1 = val1, col2 = val2 WHERE condition;
+2. DELETE
+- To delete existing rows
+- eg. DELETE FROM table_name WHERE conditiomn;
