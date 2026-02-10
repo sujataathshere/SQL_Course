@@ -157,4 +157,21 @@ ORDER BY column(s) ASC/DESC;
 - eg. UPDATE table_name SET col1 = val1, col2 = val2 WHERE condition;
 2. DELETE
 - To delete existing rows
-- eg. DELETE FROM table_name WHERE conditiomn;
+- eg. DELETE FROM table_name WHERE condition;
+
+# Cascasding for FK
+* On Delete Cascade
+- When we create a foreign key using this option, it deletes the referencing rows in the child table when the referenced row is deleted in the parent table which has a primary key.
+
+* On Update Cascade
+- When we create a foreign key using UPDATE CASCADE the referencing rows are updated in the child table when the referenced row is updated in the parent table which has a primary key.
+
+```sql
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    courseID INT,
+    FOREIGN KEY(courseID) REFERENCES course(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
+```
