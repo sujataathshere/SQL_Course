@@ -26,3 +26,4 @@ INSERT INTO course VALUES
 SELECT * FROM student
 INNER JOIN course
 ON student.id = course.id;
+

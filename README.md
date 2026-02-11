@@ -237,3 +237,17 @@ FROM tableA
 INNER JOIN tableB
 ON tableA.col_name = tableB.col_name;
 ```
+# Alias - alternative name
+```sql
+SELECT full_name as f_name, marks 
+FROM table_name;
+
+SELECT city, AVG(marks) as avg_marks 
+FROM table_name
+GROUP BY city;
+
+SELECT column(s)
+FROM tableA as A
+INNER JOIN tableB as B
+ON A.col_name = B.col_name;
+```
