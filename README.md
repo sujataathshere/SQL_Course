@@ -17,17 +17,6 @@ eg. mongoDB
 - It is a programming language used to interact with relational databases.
 - It is used to perform CRUD operations: Create, Read, Update & Delete
 
-# Create/Drop Database
-* CREATE DATABASE db_name;
-* DROP DATABASE db_name;
-
-# Create Table
-* CREATE TABLE table_name(
-    col_name1 datatype contraint,
-    col_name2 datatype contraint,
-    col_name3 datatype contraint,
-);
-
 # SQL Datatypes
 - They define the type of values that can be stored in a column
 - eg. char, varchar, blob, int, tinyint, bigint, float, double, boolean, date, year, etc.
@@ -207,3 +196,5 @@ MODIFY col_name new_datatype new_constraint;
 ```sql
 TRUNCATE TABLE table_name;
 ```
+# JOINs
+- It is used to combine rows from two or more tables, based on a related column between them.
