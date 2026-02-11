@@ -36,19 +36,25 @@ eg. mongoDB
 
 # Table related Queries
 1. To Create
-- CREATE TABLE table_name(
+```sql
+CREATE TABLE table_name(
     col_name1 datatype contraint,
-    col_name2 datatype contraint,
-);
+    col_name2 datatype contraint,);
+```
 2. To Delete
-- DROP TABLE table_name;
+```sql
+DROP TABLE table_name;
+```
 3. To Show
-- SELECT * FROM table_name;
+```sql
+SELECT * FROM table_name;
+```
 4. To Add
-- INSERT INTO table_name VALUES(colname1_v1, colname2_v2, colname3_v3);
-- INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, col3_v1),
+```sql
+INSERT INTO table_name VALUES(colname1_v1, colname2_v2, colname3_v3);
+INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, col3_v1),
 (col1_v2, col2_v2, col3_v2);
-
+```
 # Keys
 1. Primary key
 - It is a column or set of columns in a table that uniquely identifies each row.
@@ -80,16 +86,22 @@ eg. mongoDB
 
 # Select in Detail
 - used to select any data from the database.
-- eg. SELECT column_name FROM table_name;
-
+```sql
+SELECT column_name 
+FROM table_name;
+```
 # Distinct statement
 - Used to return only distinct (different) values.
-- eg. SELECT DISTINCT City FROM Student;
-
+```sql
+SELECT DISTINCT column_name 
+FROM table_name;
+```
 # Where Clause
 - To define some conditions
-- eg. SELECT * FROM student WHERE marks > 80;
-
+```sql
+SELECT * FROM table_name 
+WHERE condition;
+```
 # Operators in WHERE
 1. Arithmetic Operators : +(add), -(sub), *(mul), /(div), %(mod)
 
@@ -106,12 +118,18 @@ eg. mongoDB
 
 # Limit Clause
 - Sets an upper limit on number of (tuples) rows to be retuned
-- eg. SELECT col1, col2 FROM table_name LIMIT number; 
-
+```sql
+SELECT col1, col2 
+FROM table_name 
+LIMIT number; 
+```
 # Order By Clause
 - To sort in ascending(ASC) or descending order(DESC)
-- eg. SELECT col1, col2 FROM table_name ORDER BY col_names ASC;
-
+```sql
+SELECT col1, col2 
+FROM table_name 
+ORDER BY col_names ASC;
+```
 # Aggregate Functions
 - It perform a calculation on a set values, and return a single value.
 1. COUNT()
@@ -119,19 +137,28 @@ eg. mongoDB
 3. MIN()
 4. SUM()
 5. AVG()
-- eg. SELECT fun_name(col_name) FROM table_name;
-
+```sql
+SELECT fun_name(col_name) 
+FROM table_name;
+```
 # Group By Clause
 - Groups rows that have tghe same values into summary rows.
 - It collects data from multiple records & groups the result by one or more column.
 - Genarally we use group by with some aggregation function.
-- eg. SELECT col1_name, fun_name(col2_name) FROM table_name GROUP BY col1_name;
-
+```sql
+SELECT col1_name, fun_name(col2_name) 
+FROM table_name 
+GROUP BY col1_name;
+```
 # Having Clause
 - Similar to Where i.e applies some condition on rows.
 - Used when we want to apply any condition after grouping.
-- eg. SELECT col1_name, AG_FUN(col2_name) FROM table_name GROUP BY col1_name HAVING AG_FUN(col3_name)>90;
-
+```sql
+SELECT col1_name, AG_FUN(col2_name) 
+FROM table_name 
+GROUP BY col1_name 
+HAVING condition;
+```
 # General Order
 SELECT column(s)
 FROM table_name
@@ -143,11 +170,14 @@ ORDER BY column(s) ASC/DESC;
 # Table related Queries
 1. UPDATE 
 - To update existing rows
-- eg. UPDATE table_name SET col1 = val1, col2 = val2 WHERE condition;
+```sql
+ UPDATE table_name SET col1 = val1, col2 = val2 WHERE condition;
+```
 2. DELETE
 - To delete existing rows
-- eg. DELETE FROM table_name WHERE condition;
-
+```sql
+DELETE FROM table_name WHERE condition;
+```
 # Cascasding for FK
 * On Delete Cascade
 - When we create a foreign key using this option, it deletes the referencing rows in the child table when the referenced row is deleted in the parent table which has a primary key.
@@ -198,3 +228,12 @@ TRUNCATE TABLE table_name;
 ```
 # JOINs
 - It is used to combine rows from two or more tables, based on a related column between them.
+
+1. Inner Join
+- It returns records that have matching values in both tables
+```sql
+SELECT column(s)
+FROM tableA
+INNER JOIN tableB
+ON tableA.col_name = tableB.col_name;
+```
