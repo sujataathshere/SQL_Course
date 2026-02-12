@@ -32,3 +32,8 @@ ON student.id = course.id;
 SELECT * FROM student s
 LEFT JOIN course c
 ON s.id = c.id;
+
+/* Right Join*/
+SELECT * FROM student s
+RIGHT JOIN course c
+ON s.id = c.id;

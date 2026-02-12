@@ -259,3 +259,12 @@ FROM tableA A
 LEFT JOIN tableB B
 ON A.col_name = B.col_name;
 ```
+
+3. Right Join
+- It returns all records from the right table, & the matched records from the left table.
+```sql
+SELECT column(s)
+FROM tableA A
+RIGHT JOIN tableB B
+ON A.col_name = B.col_name;
+```
