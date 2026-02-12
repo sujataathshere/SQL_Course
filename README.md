@@ -251,3 +251,11 @@ FROM tableA as A
 INNER JOIN tableB as B
 ON A.col_name = B.col_name;
 ```
+2. Left Join
+- It returns all records from the left table, and the matched records from the right table.
+```sql
+SELECT column(s)
+FROM tableA A
+LEFT JOIN tableB B
+ON A.col_name = B.col_name;
+```

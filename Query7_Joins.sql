@@ -23,7 +23,12 @@ INSERT INTO course VALUES
 (103, "Science"),
 (107, "Computer Science");
 
+/* Inner Join*/
 SELECT * FROM student
 INNER JOIN course
 ON student.id = course.id;
 
+/* Left Join*/
+SELECT * FROM student s
+LEFT JOIN course c
+ON s.id = c.id;
