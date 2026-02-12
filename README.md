@@ -268,3 +268,12 @@ FROM tableA A
 RIGHT JOIN tableB B
 ON A.col_name = B.col_name;
 ```
+4. Full Join
+- It returns all records when there is a match in either left or right table.
+- Full Join keyword dose not exist in mysql to perfom full join we use UNION keyword.
+- In oracal & postgre sql FULL JOIN & FULL OUTER JOIN keyword is there through this keyword it is possible.
+```sql
+LEFT JOIN
+UNION 
+RIGHT JOIN
+```

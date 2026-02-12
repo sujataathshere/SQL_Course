@@ -37,3 +37,12 @@ ON s.id = c.id;
 SELECT * FROM student s
 RIGHT JOIN course c
 ON s.id = c.id;
+
+/* Full Join*/
+SELECT * FROM student s
+LEFT JOIN course c
+ON s.id = c.id
+UNION
+SELECT * FROM student s
+RIGHT JOIN course c
+ON s.id = c.id;
