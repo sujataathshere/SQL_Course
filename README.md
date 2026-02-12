@@ -277,3 +277,6 @@ LEFT JOIN
 UNION 
 RIGHT JOIN
 ```
+* UNION - It returns all unique values
+
+* UNION ALL - It returns all repeated values

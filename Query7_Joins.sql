@@ -46,3 +46,11 @@ UNION
 SELECT * FROM student s
 RIGHT JOIN course c
 ON s.id = c.id;
+
+SELECT * FROM student s
+LEFT JOIN course c
+ON s.id = c.id
+UNION ALL
+SELECT * FROM student s
+RIGHT JOIN course c
+ON s.id = c.id;
