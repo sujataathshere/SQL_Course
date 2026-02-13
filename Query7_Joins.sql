@@ -60,3 +60,9 @@ SELECT * FROM student s
 LEFT JOIN course c
 ON s.id = c.id
 WHERE c.id IS NULL;
+
+/* Right Exclusive Join*/
+SELECT * FROM student s
+RIGHT JOIN course c
+ON s.id = c.id
+WHERE s.id IS NULL;
