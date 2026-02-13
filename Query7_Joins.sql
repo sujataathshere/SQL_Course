@@ -38,7 +38,7 @@ SELECT * FROM student s
 RIGHT JOIN course c
 ON s.id = c.id;
 
-/* Full Join*/
+/* Full Join - UNION, UNION ALL */
 SELECT * FROM student s
 LEFT JOIN course c
 ON s.id = c.id
@@ -54,3 +54,9 @@ UNION ALL
 SELECT * FROM student s
 RIGHT JOIN course c
 ON s.id = c.id;
+
+/* Left Exclusive Join */
+SELECT * FROM student s
+LEFT JOIN course c
+ON s.id = c.id
+WHERE c.id IS NULL;

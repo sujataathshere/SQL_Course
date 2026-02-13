@@ -280,3 +280,13 @@ RIGHT JOIN
 * UNION - It returns all unique values
 
 * UNION ALL - It returns all repeated values
+
+# Left Exclusive Join
+- It returns all records from the left table, & not a matched records from the left table. 
+```sql
+SELECT column(s)
+FROM tableA A
+LEFT JOIN tableB B
+ON A.col_name = B.col_name
+WHERE B.col_name IS NULL;
+```
