@@ -66,3 +66,5 @@ SELECT * FROM student s
 RIGHT JOIN course c
 ON s.id = c.id
 WHERE s.id IS NULL;
+
+

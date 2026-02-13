@@ -290,3 +290,11 @@ LEFT JOIN tableB B
 ON A.col_name = B.col_name
 WHERE B.col_name IS NULL;
 ```
+# Self Join
+- It is a regular join but the table is joined with itself.
+```sql
+SELECT column(s)
+FROM tableA as a
+JOIN tableA as b
+ON a.col_name = b.col_name;
+```
