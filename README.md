@@ -298,3 +298,4 @@ FROM tableA as a
 JOIN tableA as b
 ON a.col_name = b.col_name;
 ```
+# UNION
