@@ -71,6 +71,8 @@ INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, co
 - eg. col1 int NOT NULL
 2. UNIQUE
 - All values in column are different
+- columns can have a null value
+- Only one NULL is allowed in a UNIQUE column.
 - eg. col2 int UNIQUE
 3. PRIMARY KEY
 - It makes a column unique & not null but used only for one
@@ -83,6 +85,20 @@ INSERT INTO table_name(colname1, colname2, colname3) VALUES(col1_v1, col2_v1, co
 6. CHECK
 - It can limit the values allowed in a column
 - eg. age INT CHECK (age >= 18)
+```sql
+CREATE TABLE student(
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    city VARCHAR(50) NOT NULL
+)
+CREATE TABLE employee(
+    id INT PRIMARY KEY,
+    full_name VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    age INT CHECK (age>=18),
+    salary INT DEFAULT 25000
+)
+```
 
 # Select in Detail
 - used to select any data from the database.
