@@ -158,7 +158,7 @@ SELECT fun_name(col_name)
 FROM table_name;
 ```
 # Group By Clause
-- Groups rows that have tghe same values into summary rows.
+- Groups rows that have the same values into summary rows.
 - It collects data from multiple records & groups the result by one or more column.
 - Genarally we use group by with some aggregation function.
 ```sql
@@ -187,12 +187,15 @@ ORDER BY column(s) ASC/DESC;
 1. UPDATE 
 - To update existing rows
 ```sql
- UPDATE table_name SET col1 = val1, col2 = val2 WHERE condition;
+UPDATE table_name 
+SET col1 = val1, col2 = val2 
+WHERE condition;
 ```
 2. DELETE
 - To delete existing rows
 ```sql
-DELETE FROM table_name WHERE condition;
+DELETE FROM table_name 
+WHERE condition;
 ```
 # Cascasding for FK
 * On Delete Cascade
