@@ -318,3 +318,33 @@ JOIN tableA as b
 ON a.col_name = b.col_name;
 ```
 # UNION
+- It is used to combine the result-set of two or more SELECT statements.
+- It gives UNIQUE records.
+* To use it: 
+    - Every SELECT should have same no. of columns
+    - Columns must have similar data types
+    - Columns in every SELECT should be in same order
+```sql
+SELECT column(s) FROM tableA
+UNION
+SELECT column(s) FROM tableB
+```
+# SQL Sub Query
+- A Subquery (or) Inner query (or) a Nested query is a query within another SQL query.
+- It involves 2 select statements.
+- We can write subquery in SELECT, FROM & WHERE clause.
+```sql
+SELECT column(s)
+FROM table_name
+WHERE col_name operator
+(subquery);
+```
+* Example with SELECT
+- A subquery in the SELECT clause must return:
+- Exactly one column
+- Exactly one row (for each outer row)
+- If it returns multiple rows → Error
+- If it returns multiple columns → Error
+
+# MySQL Views
+- 

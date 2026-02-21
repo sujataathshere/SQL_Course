@@ -31,3 +31,8 @@ SELECT a.name as manager_name, b.name
 FROM employee as a
 JOIN employee as b
 ON a.id = b.manager_id;
+
+/* UNION */
+SELECT name FROM employee
+UNION
+SELECT name FROM employee;
