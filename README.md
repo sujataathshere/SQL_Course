@@ -346,6 +346,7 @@ SELECT column(s) FROM tableB
 - A Subquery (or) Inner query (or) a Nested query is a query within another SQL query.
 - It involves 2 select statements.
 - We can write subquery in SELECT, FROM & WHERE clause.
+- When we need data from another/two tables then we use sub query.
 ```sql
 SELECT column(s)
 FROM table_name
