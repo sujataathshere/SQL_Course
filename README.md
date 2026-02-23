@@ -205,6 +205,10 @@ WHERE condition;
 - When we create a foreign key using UPDATE CASCADE the referencing rows are updated in the child table when the referenced row is updated in the parent table which has a primary key.
 
 ```sql
+CREATE TABLE course (
+    id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
 CREATE TABLE student (
     id INT PRIMARY KEY,
     courseID INT,
