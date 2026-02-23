@@ -293,7 +293,7 @@ ON A.col_name = B.col_name;
 ```
 4. Full Join
 - It returns all records when there is a match in either left or right table.
-- Full Join keyword dose not exist in mysql to perfom full join we use UNION keyword.
+- FULL JOIN keyword dose not exist in mysql to perfom full join, we use UNION keyword.
 - In oracal & postgre sql FULL JOIN & FULL OUTER JOIN keyword is there through this keyword it is possible.
 ```sql
 LEFT JOIN
@@ -305,13 +305,22 @@ RIGHT JOIN
 * UNION ALL - It returns all repeated values
 
 # Left Exclusive Join
-- It returns all records from the left table, & not a matched records from the left table. 
+- It returns all records from the left table, & NOT a matched records from the left table. 
 ```sql
 SELECT column(s)
 FROM tableA A
 LEFT JOIN tableB B
 ON A.col_name = B.col_name
 WHERE B.col_name IS NULL;
+```
+# RIGHT Exclusive Join
+- It returns all records from the right table, & NOT a matched records from the right table. 
+```sql
+SELECT column(s)
+FROM tableA A
+RIGHT JOIN tableB B
+ON A.col_name = B.col_name
+WHERE A.col_name IS NULL;
 ```
 # Self Join
 - It is a regular join but the table is joined with itself.
