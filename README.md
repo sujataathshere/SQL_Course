@@ -363,4 +363,4 @@ WHERE col_name operator
 # MySQL Views
 - A view is a virtual table based on the result-set of an SQL statement.
 - A view always shows up-to-date data.
-- The database engine recreates the view, every time a user queries it.
+- The database engine recreates the view, every time a user queries it
